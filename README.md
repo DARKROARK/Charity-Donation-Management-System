@@ -26,4 +26,20 @@ o	Campaign Managers: Track campaign funds and events.
 o	Performance and Security: Ensure fast data retrieval and secure role-based access.
 
 
+4. Database Design
+•	Data Captured:
+o	Feedback from Users shaped the logical and physical database design.
+o	Defined relationships between key entities like Donor, Donation, Campaign, Event, and Receipt.
+	ER Model: in UML design already uploaded
+
+
+5. Application Design
+   Basic interface designed for submission of data about Donors and Donations
+
+
+6. DBMS Selection
+   o	DBMS: MySQL chosen for its reliability and support for real-time analytics.
+
+
+
 
