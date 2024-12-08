@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form select, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Donation Management</h1>
+        <form action="submit_donor.php" method="POST">
+            <h2>Add Donor</h2>
+            <input type="text" name="name" placeholder="Donor Name" required>
+            <input type="email" name="contact_info" placeholder="Contact Info" required>
+            <textarea name="preferences" placeholder="Preferences"></textarea>
+            <button type="submit">Add Donor</button>
+        </form>
+
+        <form action="submit_donation.php" method="POST">
+            <h2>Add Donation</h2>
+            <input type="number" name="amount" placeholder="Amount" step="0.01" required>
+            <input type="date" name="date" required>
+            <select name="payment_method" required>
+                <option value="Credit Card">Credit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+            </select>
+            <input type="number" name="donor_id" placeholder="Donor ID" required>
+            <button type="submit">Add Donation</button>
+        </form>
+    </div>
+</body>
+</html>
