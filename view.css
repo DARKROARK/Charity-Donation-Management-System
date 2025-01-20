@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  padding: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  background: linear-gradient(to right, #3c99b8, #7d00c9); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+form h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+select, input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: linear-gradient(to right, #56d8e4, #9f01ea);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #9f01ea, #56d8e4);
+}
+
+.result-container {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.result-container h3 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+.butt {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  background: linear-gradient(to right, #56d8e4, #9f01ea);
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.butt:hover {
+  background: linear-gradient(to right, #9f01ea, #56d8e4);
+}
+
+
+
+
+/* Responsive Table Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  form h3 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 12px;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    padding-right: 10px;
+    padding-top: 12px;
+  }
+}
+.section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    background: linear-gradient(to right, #3c99b8, #7d00c9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button {
+    background: linear-gradient(to right, #56d8e4, #9f01ea);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #9f01ea, #56d8e4);
+}
+
+.button:active {
+    background: linear-gradient(to right, #7d00c9, #56d8e4);
+    transform: scale(0.98);
+}

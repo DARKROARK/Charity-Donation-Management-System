@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  padding: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  background: linear-gradient(to right, #3c99b8, #7d00c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.about-section,
+.work-section,
+.cta-section,
+.login-section {
+  margin-bottom: 30px;
+}
+
+.about-section h2,
+.work-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-section p,
+.work-section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cta-button,
+.login-button {
+  display: inline-block;
+  background: linear-gradient(to right, #56d8e4, #9f01ea);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.cta-button:hover,
+.login-button:hover {
+  background: linear-gradient(to right, #9f01ea, #56d8e4);
+  transform: scale(1.05);
+}
+
+.cta-button:active,
+.login-button:active {
+  transform: scale(0.95);
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .about-section h2,
+  .work-section h2 {
+    font-size: 24px;
+  }
+
+  .cta-button,
+  .login-button {
+    font-size: 14px;
+  }
+}
